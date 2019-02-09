@@ -18,8 +18,8 @@ public void setUp(){
 }
 @AfterClass
     public void tearDow() throws InterruptedException {
-        Thread.sleep(3000);
-        wd.quit();
+      //Thread.sleep(3000);
+       // wd.quit();
 }
 }
 
