@@ -12,26 +12,32 @@ public class OpenChromeBrowser {
 
     @BeforeClass
 public void setUp(){
+        setUpBefore();
+    }
+
+    private void setUpBefore() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
-@Test
+    @Test
     public void chromeBrowserTest(){
         wd.get("http://google.com");
-        //typelnSearchBar
+
+        type();
+
+
+    }
+
+    private void type() {
         wd.findElement(By.name("q")).click();
         wd.findElement(By.name("q")).clear();
 
         wd.findElement(By.name("q")).sendKeys("selenium");
+    }
 
 
-
-
-}
-
-
-@AfterClass
+    @AfterClass
     public void tearDow() throws InterruptedException {
       //Thread.sleep(3000);
       //  wd.quit();

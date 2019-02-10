@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="HannaDubavets.firstSeleniumProject.main" target="1.8" />
       <module name="HannaDubavets.firstSeleniumProject.test" target="1.8" />
+      <module name="secondSeleniumProject_main" target="1.8" />
+      <module name="secondSeleniumProject_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
