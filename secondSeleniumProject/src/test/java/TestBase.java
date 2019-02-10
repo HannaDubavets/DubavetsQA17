@@ -75,4 +75,18 @@ wd.quit();
                 return false;
             }
         }
+
+    protected void clickOnAvatar() {
+        click(By.cssSelector("img.member-avatar"));
+    }
+
+    public void click(By locator) {
+        wd.findElement(locator).click();
+    }
+
+    protected void clickOnLogOutButton() {
+        click(By.cssSelector("a.js-logout"));
+
+
+    }
 }
